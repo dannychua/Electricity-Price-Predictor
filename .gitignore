@@ -1,2 +1,3 @@
 # iPython Notebook Checkpoints
-*.ipynb_checkpoints
+.ipynb_checkpoints
+*-checkpoints.ipynb
