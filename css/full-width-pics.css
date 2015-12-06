@@ -17,8 +17,8 @@ body {
     -o-background-size: cover;
 }
 
-.image-bg-fluid-height {
-	background: url('http://lorempixel.com/g/1920/500/') no-repeat center center scroll;
+.image-bg-fluid-height.nuke {
+	background: url('../img/banner1.jpg') no-repeat center center scroll;
     padding: 100px 0;
 }
 
