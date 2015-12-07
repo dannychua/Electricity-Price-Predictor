@@ -45,13 +45,35 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="https://github.com/dannychua/Electricity-Price-Predictor">GitHub</a>
+                        <a href="https://github.com/dannychua/Electricity-Price-Predictor">GitHub Repository</a>
                     </li>
                     <li>
-                        <a href="#">Data Sources</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Data Sources <span class="caret"></span></a>
+						<ul class="dropdown-menu multi-level">
+							<li><a href="https://dataminer.pjm.com/dataminerui/pages/public/lmp.jsf">PJM Locational Marginal Prices</a></li>
+							<li><a href="https://www.misoenergy.org/MarketsOperations/Prices/Pages/Prices.aspx">MISO Locational Marginal Prices</a></li>
+							<li><a href="http://www.pjm.com/markets-and-operations/ops-analysis.aspx">PJM Wind Generation</a></li>
+							<li class="dropdown-submenu">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">MISO Wind Generation <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="https://www.misoenergy.org/Library/MarketReports/Pages/ArchivedHistoricalHourlyWindData.aspx">MISO Wind Data (2008&ndash;2012)</a></li>
+									<li><a href="https://www.misoenergy.org/RTDisplays/MKTRPT/AllReportsList.html?rptName=Historical%20Hourly%20Wind%20Data%20(csv)">MISO Wind Data (2013&ndash;2015)</a></li>
+								</ul>
+							</li>
+							<li><a href="http://www.pjm.com/markets-and-operations/ops-analysis/historical-load-data.aspx">PJM Demand</a></li>
+							<li class="dropdown-submenu">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">MISO Demand <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="https://www.misoenergy.org/Library/MarketReports/Pages/ArchivedDailyRegionalForecastandActualLoad.aspx">MISO Demand (2009&ndash;2012)</a></li>
+									<li><a href="https://www.misoenergy.org/RTDisplays/MKTRPT/AllReportsList.html?rptName=Daily%20Regional%20Forecast%20and%20Actual%20Load%20(xls)">MISO Demand (2013&ndash;2015)</a></li>
+								</ul>
+							</li>
+							<li><a href="https://www.eia.gov/dnav/ng/ng_pri_sum_dcu_nus_m.htm">EIA Natural Gas Data</a></li>
+							<li><a href="http://www.eia.gov/coal/data.cfm">EIA Coal Data</a></li>
+						</ul>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="http://cs109.org/">CS 109 Home</a>
                     </li>
                 </ul>
             </div>
