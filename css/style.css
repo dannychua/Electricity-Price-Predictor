@@ -53,4 +53,8 @@ CSS for multi-level Bootstrap menu from http://bootsnipp.com/snippets/featured/m
 header.nuke h1.section-heading {
 	color: white;
 }
+
+/* Override basic paragraph line height */
+.section-paragraph {
+	line-height: 125%;
 }
