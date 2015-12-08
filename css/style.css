@@ -59,3 +59,16 @@ header.nuke h1.section-heading {
 	font-size: 1.2em;
 	line-height: 2.0em;
 }
+
+/* Predictors list styles */
+#predictorList {
+	margin: 0;
+	padding: 0;	
+}
+
+#predictorList li {
+	color: #2B4970;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5em;
+	font-weight: 600;
+}
