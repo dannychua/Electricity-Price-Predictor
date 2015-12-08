@@ -50,7 +50,7 @@ CSS for multi-level Bootstrap menu from http://bootsnipp.com/snippets/featured/m
     border-radius: 6px 0 6px 6px;
 }
 
-header.nuke h1 {
+header.nuke h1.section-heading {
 	color: white;
 }
 }
