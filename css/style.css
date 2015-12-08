@@ -56,5 +56,6 @@ header.nuke h1.section-heading {
 
 /* Override basic paragraph line height */
 .section-paragraph {
-	line-height: 125%;
+	font-size: 1.2em;
+	line-height: 2.0em;
 }
