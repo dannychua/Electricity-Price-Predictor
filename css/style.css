@@ -89,3 +89,7 @@ header.nuke h1.section-heading {
 .center {
 	text-align: center;
 }
+
+img.constrain {
+	max-width: 100%;
+}
