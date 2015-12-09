@@ -93,3 +93,12 @@ header.nuke h1.section-heading {
 img.constrain {
 	max-width: 100%;
 }
+
+/* Override some of Bootstrap's section spacing using a little CSS3 magic */
+section:not(:first-of-type) {
+	padding: 30px 0px;
+}
+
+section:first-of-type {
+	padding: 75px 0px 30px 0px;
+}
