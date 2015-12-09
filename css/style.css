@@ -63,7 +63,7 @@ header.nuke h1.section-heading {
 /* Predictors list styles */
 #predictorList {
 	margin: 0;
-	padding: 0;	
+	/*padding: 0;	*/
 }
 
 #predictorList li {
