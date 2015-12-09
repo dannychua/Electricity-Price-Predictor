@@ -83,6 +83,7 @@ header.nuke h1.section-heading {
 .bigNumber {
 	font-size: 3.0em;
 	font-weight: 800;
+	padding-top: 3px;
 }
 
 .center {
