@@ -72,3 +72,19 @@ header.nuke h1.section-heading {
 	font-size: 1.5em;
 	font-weight: 600;
 }
+
+.raleway p {
+	color: #2D892D;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5em;
+	font-weight: 600;
+}
+
+.bigNumber {
+	font-size: 3.0em;
+	font-weight: 800;
+}
+
+.center {
+	text-align: center;
+}
