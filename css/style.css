@@ -117,5 +117,5 @@ section:first-of-type {
 
 /* Override Bootstrap's default hr color */
 hr {
-	border-top-color: #333;
+	border-top: 1px solid #ECECEC;
 }
