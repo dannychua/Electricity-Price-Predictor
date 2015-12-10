@@ -116,7 +116,10 @@
 						would make it more difficult to comply with the EPA's <a href="http://www2.epa.gov/cleanpowerplan/clean-power-plan-existing-power-plants" target="_blank">
 						Clean Power Plan</a> regulations, 
 						and, more generally, would make it more difficult to achieve the long-term emissions reductions neccessary to avoid the worst effects of climate change. 
-						Policymakers are now faced with the dilemma of whether or not and by how much to support these plants.
+						<br>
+						Policymakers are now faced with the dilemma of whether or not and by how much to support these plants. As nuclear plant revenues are a direct function of 
+						wholesale power prices, the risks and tradeoffs of the debate could be clarified with an accurate forecast of future electricity prices&mdash;this is the 
+						challenge our project attempts to address.  
 					</p>
 					
 					<h2>The Price of Electricity</h2>
@@ -164,18 +167,28 @@
                 <div class="col-lg-8">
 					<h2>Gathering Data</h2>
 					<p class="section-paragraph">
-						Notes on data collection. Total # of data records in dataset. Other stuff.
+						<a href="https://www.eia.gov/forecasts/aeo/section_prices.cfm" target="_blank">According to the US Energy Information Administration</a>, the key factors 
+						that influence wholesale power prices are demand for electricity and the cost of fuel 
+						for generators. We gathered historical electricity demand data from wholesale market operator websites, and since natural gas and coal are the largest sources 
+						of electricity production in the region. Though wind generation still only makes up a small portion of total electricity generation, it has been fingered as 
+						a culprit for depressed wholesale prices, and therefore we also include it as a feature in our model. 
+						<br>
+						Unlike the rate for electricity you pay at home, wholesale power prices vary by time and location. For this reason it was important for us to train our 
+						model on the price at the specific location of the nuclear plants in question. 
 					</p>
 					<h2>Initial Observations</h2>
 					<p class="lead section-lead">
-						Wholesale electricity prices fell significantly in 2008&ndash;2009. Natural gas prices have trended downward since 2008, while wind generation capacity has 
-						posted steady gains over the same period.
+						The figure on the right displays the results of our data collection efforts: the historical values of wholesale, electricity, gas and coal prices, 
+						electricity demand, and wind generation in the Midwest region. It is notable that wholesale electricity and gas prices both fell significantly in 
+						2008&ndash;2009. Coal prices fluctuate but show no clear trend, while wind generation has steadily increased since 2008 and shows increasingly sharp seasonal 
+						variation (while wind and demand are both displayed in units of MWh and scaled in a way to reveal trends, wind is actually tiny fraction of total 
+						electricity demand). 
 					</p>
 					
 					<img src="img/feature_eda.png" alt="feature trends data analysis" class="constrain" />
                     <h2>Predicting Electricity Prices</h2>
                     <p class="lead section-lead">
-						The final prediction model captured <b>93%</b> of the variance in wholesale electricity prices.
+						The final prediction model captured <b class="enlarged">93%</b> of the variance in wholesale electricity prices.
 					</p>
                     <p class="section-paragraph">
 						The project team evaluated a number of analytical techniques to predict wholesale electricity prices using the available data for the years 2008&ndash;2015 

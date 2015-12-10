@@ -94,6 +94,11 @@ img.constrain {
 	max-width: 100%;
 }
 
+.enlarged {
+	font-size: 150%;
+	font-weight: 800;
+}
+
 /* Override some of Bootstrap's section spacing using a little CSS3 magic */
 section:not(:first-of-type) {
 	padding: 30px 0px;
