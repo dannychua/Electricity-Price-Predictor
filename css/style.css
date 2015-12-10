@@ -114,3 +114,8 @@ section:not(:first-of-type) {
 section:first-of-type {
 	padding: 75px 0px 30px 0px;
 }
+
+/* Override Bootstrap's default hr color */
+hr {
+	border-top-color: #333;
+}
