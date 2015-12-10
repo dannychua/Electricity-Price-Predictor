@@ -74,7 +74,6 @@ header.nuke h1.section-heading {
 }
 
 .raleway p {
-	color: #2D892D;
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.5em;
 	font-weight: 600;
@@ -97,6 +96,14 @@ img.constrain {
 .enlarged {
 	font-size: 150%;
 	font-weight: 800;
+}
+
+.sns-red {
+	color: #c34e52;
+}
+
+.sns-green {
+	color: #2D892D;
 }
 
 /* Override some of Bootstrap's section spacing using a little CSS3 magic */

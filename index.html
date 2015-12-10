@@ -116,7 +116,8 @@
 						would make it more difficult to comply with the EPA's <a href="http://www2.epa.gov/cleanpowerplan/clean-power-plan-existing-power-plants" target="_blank">
 						Clean Power Plan</a> regulations, 
 						and, more generally, would make it more difficult to achieve the long-term emissions reductions neccessary to avoid the worst effects of climate change. 
-						<br>
+					</p>
+					<p class="section-paragraph">
 						Policymakers are now faced with the dilemma of whether or not and by how much to support these plants. As nuclear plant revenues are a direct function of 
 						wholesale power prices, the risks and tradeoffs of the debate could be clarified with an accurate forecast of future electricity prices&mdash;this is the 
 						challenge our project attempts to address.  
@@ -203,10 +204,12 @@
 					</p>
                     <p class="section-paragraph">
 						The project team evaluated a number of analytical techniques to predict wholesale electricity prices using the available data for the years 2008&ndash;2015 
-						for overall demand, natural gas prices, coal prices, and wind generation capacity. Linear predictive techniques produced poor results, showing a high error 
-						rate of ___. Using a non-linear method, random forest regression, resulted in enormous gains in accuracy: the final predictive model was able to capture 
-						<b>93%</b> of the variance in wholesale electricity prices using the selected predictors. The project team suspects that the non-linear model was a better 
-						fit for the cyclical (i.e., non-linear) predictors, such as hour of the day, day of the week, and month of the year.
+						for overall demand, natural gas prices, coal prices, and wind generation capacity. Linear regression techniques generally produced poor results, achieving a 
+						maximum accuracy of only 44% (as measured by r-squared). This may partly be explained by the numerous non-linearities we observed in the relationships between 
+						features in our model. With this in mind, we decided to try a Random Forest Regressor, which is an ensemble of different regression trees and is considered 
+						appropriate for non-linear multiple regression. This approach resulted in enormous gains in accuracy: the final predictive model was able to capture 93% 
+						of the variance in wholesale electricity prices using the selected predictors. The project team suspects that the Random Forest approach was better able to 
+						capture the cyclical (i.e., non-linear) nature of our time series data, which fluctuates depending on the hour of the day, day of the week, and month of the year.
 					</p>
 					<p class="section-paragraph">
 						Say things about the predictions. Prices are measured in dollars per megawatt-hour ($/MWh), a common measure of price based on the amount of electricity 
@@ -235,7 +238,7 @@
 					<img src="img/predicted_lmp_various.png" alt="predicted lmp various scenarios" class="constrain" />
 				</div>
 				<div class="col-lg-4">
-					<div class="raleway center">
+					<div class="raleway center sns-red">
 						<p class="section-paragraph">
 							Wholesale prices<br>
 							increase by<br>
@@ -243,6 +246,15 @@
 							if demand rises to<br>
 							double its current<br>
 							level by 2020.
+						</p>
+					</div>
+					<div class="raleway center sns-green">
+						<p class="section-paragraph">
+							Wholesale prices<br>
+							increase by only<br>
+							<span class="bigNumber">~20%</span><br>
+							if natural gas prices<br>
+							double by 2020.
 						</p>
 					</div>
 				</div>
@@ -257,7 +269,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p>This project is entirely open source and was produced with freely available open source tools.</p>
+                    <p>This project is entirely open source and was produced with freely available tools. View the 
+					<a href="https://github.com/dannychua/Electricity-Price-Predictor" target="_blank">GitHub repository</a> for details.
+					</p>
                 </div>
             </div>
             <!-- /.row -->
